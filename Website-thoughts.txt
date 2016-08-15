@@ -1,0 +1,14 @@
+Website analyzed: officialkaigreene.com
+
+Do you recognize any HTML elements?
+Just certain tags that I recognized. 
+Header. Div, Head, Html and body.
+
+Guess what the things you don't recognize do.
+script: link
+meta: certain display type
+
+Few words about the site-
+It has so much content and links to it. Its cosmetically beautiful.
+My website loads alot faster compared to this one since the content 
+is alot less to load.
