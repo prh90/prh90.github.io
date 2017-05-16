@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PersonalWebsite</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion({heightStyle: 'content'});
+    } );
+    </script>
+  </head>
+
+  <body class="body">
+    <h1 class="name">Pablo Hernandez</h1>
+    <div id="accordion">
+      <h3>Who Am I?</h3>
+      <div id="panel">
+        <img src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/15168752_10154768455669809_1717654145558270406_o.jpg?oh=2b7b7ed4b8226678a6fdc0259664f07e&oe=59B879D1" alt="Pablo Hernandez" style="width:400px;height:400px;"/>
+
+        <p class="intro">
+          Hello! I am Pablo Hernandez, a fan of the tech world turned into developer. I am eager to show you what I have been up to since graduating DevBootcamp in February 2017.
+        </p>
+
+      </div>
+
+      <h3>Projects</h3>
+      <div id="panel" class="panel-2">
+        <a href="https://github.com/prh90"  target="_blank" class="btn btn-warning" id="header">Visit My Github!</a>
+        <div class="div1">
+          <a href="https://github.com/prh90/workout_buddy" target="_blank" class="btn btn-success">Workout Buddy</a>
+          <p class="wb">
+            Workout Buddy is a website that lets you log your workout in. Sign in and log your workouts, making it easy to input your thoughts. It includes calories input, Name of workout, calendar to enter date and lastly thoughts of the workout.
+          </p>
+        </div>
+        <div class="div2">
+          <a href="https://github.com/prh90/alexalight" target="_blank" class="btn btn-success">AlexaLight</a>
+          <p class="al">
+            Alexa Light is a project that addresses a certain problem everyone has, Do you leave your house for long periods of time? Do you need to adjust your sleep schedule? Alexa Light works with Amazons Alexa to give a new set of commands to a smart bulb. Alexa was built for alarm mode which includes sunrise/sunset modes. Also built in modes that range from romance mode to party mode. Alexa Light also can be used for adjusting sleeping schedule with automatic mode that a user can adjust the time to go through outside lighting simulation.
+          </p>
+        </div>
+
+      </div>
+
+      <h3>Resume</h3>
+      <div id="panel" class="panel-3">
+        <div id="resume">
+          <a href="https://resume.creddle.io/resume/9vw7jnmc50g"  target="_blank" class="btn btn-warning">Resume</a>
+        </div>
+
+        <iframe src="https://resume.creddle.io/resume/9vw7jnmc50g" width="850" height="700" seamless></iframe>
+      </div>
+  </div>
+    <%= yield %>
+  </body>
+</html>
